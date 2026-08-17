@@ -56,19 +56,23 @@
 #let edu_item(
   name: "Sample University", 
   degree: "B.S in Bullshit", 
+  honors: "",
+  gpa: "",
   location: "Foo, BA", 
   date: "Aug. 1600 - May 1750"
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, grid(
-    columns: (3fr, 1fr),
+    columns: (1fr, auto),
     align(left)[
       *#name* \
-      _#degree _
+      _#degree _ \
+      #if honors != "" [_#honors _]
     ],
     align(right)[
       #location \
-      _#date _
+      _#date _ \
+      #if gpa != "" [_GPA: #gpa _]
     ]
   ))
 }

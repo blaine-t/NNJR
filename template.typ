@@ -28,6 +28,7 @@
   email: "jake@su.edu",
   linkedin: "linkedin.com/in/jake",
   site: "github.com/jake",
+  github: "github.com/jake"
 ) = {
   align(center,
     block[
@@ -35,7 +36,8 @@
       #phone |
       #link("mailto:" + email)[#email] |
       #link("https://" + linkedin)[#linkedin] |
-      #link("https://" + site)[#site]
+      #link("https://" + site)[#site] |
+      #link("https://" + github)[#github]
     ]
   )
   v(5pt)

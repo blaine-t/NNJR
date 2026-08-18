@@ -3,6 +3,7 @@
   show list: set text(size: 0.92em)
   show link: underline
   show link: set underline(offset: 3pt)
+  show link: set underline(stroke: 0pt)
 
   set page(
     paper: "us-letter",
@@ -30,6 +31,7 @@
   site: "github.com/jake",
   github: "github.com/jake"
 ) = {
+  show link: set underline(stroke: auto)
   align(center,
     block[
       #name_header(name) \
